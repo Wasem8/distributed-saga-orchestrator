@@ -67,10 +67,7 @@ export class LoadBalancerSimulator {
     return server;
   }
 
-  // 2. خوارزمية التناوب الدائري الموزون
- // أضف هذه المتغيرات في أعلى الكلاس (بجانب private rrIndex = 0;) لتتبع الأوزان الحالية
-private currentWeightCount = 0;
-private serverWeightIndex = 0;
+
 
 private weightedRoundRobin(servers: ServerNode[]): ServerNode {
   // 1. الدوران للبحث عن سيرفر ما زال يمتلك أوزان متاحاً في الدورة الحالية
